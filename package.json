@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "bootstrap": "5.2",
+    "bootstrap-icons": "^1.11.3",
     "nuxt": "^3.14.1592",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@nuxtjs/supabase": "^1.4.5"
   }
 }

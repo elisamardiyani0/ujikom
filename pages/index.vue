@@ -4,7 +4,9 @@
       <div class="carousel-item active custom-bg">
         <div class="overlay">
           <div>
-            <h1 class="custom-text text-center">Selamat Datang di Sekolah Pusat Keunggulan SMKN 4 Tasikmalaya</h1>
+            <h1 class="custom-text text-center">
+              Selamat Datang di Sekolah Pusat Keunggulan SMKN 4 Tasikmalaya
+            </h1>
           </div>
         </div>
       </div>
@@ -13,17 +15,32 @@
     <div class="text-center p-5">
       <div class="row">
         <div class="col-lg-4">
-          <img src="/assets/img/kepsek.jpeg" alt="" style="width: 25rem" class="p-2" />
+          <img
+            src="/assets/img/kepsek.jpeg"
+            alt=""
+            style="width: 25rem"
+            class="p-2" />
           <p class="fs-2">Kurniawan,S.Pd,M.pd</p>
         </div>
         <div class="col-lg-8 p-5 mt-5">
           <p class="fs-1">SAMBUTAN KEPALA SEKOLAH</p>
           <p style="text-align: justify">
-            Assalamualaikum Warahmatullahi Wabarakatuh Selamat datang di SMKN 4 Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah SWT, semoga kita semua ada dalam lindungan-Nya. Dan atas perkenan-Nya pula kami dapat menghadirkan
-            website SMK Negeri 4 Tasikmalaya ini. Kami berharap dengan adanya website di SMK Negeri 4 Tasikmalaya ini para pengunjung dapat mengenal lebih jauh tentang sekolah kami sehingga dapat mempererat tali silaturrahmi antara sekolah dengan
-            masyarakat demi kemajuan kita bersama. Tiada gading yang tak retak, website kami ini masih dalam proses pengembangan, masih banyak kekurangan yang harus kami perbaiki. Kritik dan sarannya yang membangun sangat kami harapkan untuk
-            pengembangan ke depan. Akhirnya,saya mengucapkan terimakasih yang sebesar-besarnya kepada semua pihak yang tidak dapat disebutkan satu segala bantuan dan persatu atas fasilitasnya yang telah diberikan semoga semua yang kita lakukan
-            bermanfaat bagi masyarakat. Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+            Assalamualaikum Warahmatullahi Wabarakatuh Selamat datang di SMKN 4
+            Tasikmalaya. Segala puji dan syukur kita panjatkan kehadirat Allah
+            SWT, semoga kita semua ada dalam lindungan-Nya. Dan atas
+            perkenan-Nya pula kami dapat menghadirkan website SMK Negeri 4
+            Tasikmalaya ini. Kami berharap dengan adanya website di SMK Negeri 4
+            Tasikmalaya ini para pengunjung dapat mengenal lebih jauh tentang
+            sekolah kami sehingga dapat mempererat tali silaturrahmi antara
+            sekolah dengan masyarakat demi kemajuan kita bersama. Tiada gading
+            yang tak retak, website kami ini masih dalam proses pengembangan,
+            masih banyak kekurangan yang harus kami perbaiki. Kritik dan
+            sarannya yang membangun sangat kami harapkan untuk pengembangan ke
+            depan. Akhirnya,saya mengucapkan terimakasih yang sebesar-besarnya
+            kepada semua pihak yang tidak dapat disebutkan satu segala bantuan
+            dan persatu atas fasilitasnya yang telah diberikan semoga semua yang
+            kita lakukan bermanfaat bagi masyarakat. Wassalamu'alaikum
+            Warahmatullahi Wabarakatuh.
           </p>
         </div>
       </div>
@@ -37,7 +54,9 @@
           <div class="card" style="width: 15rem">
             <img src="/assets/img/pplg.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">PPLG (pengembangan perangkat lunak dan Gim)</h5>
+              <h5 class="card-title">
+                PPLG (pengembangan perangkat lunak dan Gim)
+              </h5>
             </div>
           </div>
         </div>
@@ -45,7 +64,9 @@
           <div class="card" style="width: 15rem">
             <img src="/assets/img/tkjt.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">TJKT(Teknik Jaringan Komputer Dan Telekomunikasi )</h5>
+              <h5 class="card-title">
+                TJKT(Teknik Jaringan Komputer Dan Telekomunikasi )
+              </h5>
             </div>
           </div>
         </div>
@@ -106,7 +127,11 @@
             <img :src="berita.poto" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">{{ berita.nama }}</h5>
-              <a href="https://radartasik.id/2024/05/16/smk-negeri-4-tasikmalaya-ikuti-pelatihan-safety-riding-yang-diselenggarakan-pt-daya-adicipta-motora/" class="btn btn-primary">Go somewhere</a>
+              <a
+                href="https://radartasik.id/2024/05/16/smk-negeri-4-tasikmalaya-ikuti-pelatihan-safety-riding-yang-diselenggarakan-pt-daya-adicipta-motora/"
+                class="btn btn-primary"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
@@ -115,11 +140,11 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .custom-bg {
   position: relative;
   height: 100vh;
-  background-image: url("assets/img/home.jpg");
+  background-image: url("assets/img/home.jpeg");
   background-size: cover; /* Resize the background image */
   background-position: center; /* Center the image */
 }
@@ -143,6 +168,15 @@
 </style>
 
 <script setup>
+useHead({
+  title: "Beranda",
+  meta: [
+    {
+      name: "description",
+      content: "Beranda",
+    },
+  ],
+});
 const supabase = useSupabaseClient();
 
 const cover = ref([]);
